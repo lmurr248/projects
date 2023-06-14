@@ -1,3 +1,4 @@
-
+function helloWorld(){
 var helloWorld = "Hello World!";
-console.log(helloWorld);
+document.getElementById("header").innerHTML = helloWorld;
+}
