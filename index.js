@@ -1,9 +1,3 @@
-function helloWorld(){
-var helloWorld = "Hello World!";
-document.getElementById("header").innerHTML = helloWorld;
-}
-
-
 // Tiny MCE
 
 tinymce.init({
