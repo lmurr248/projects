@@ -5,6 +5,11 @@
     font-family: 'Inter', sans-serif;
 }
 
+select {
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
 .header--container-main {
     display: flex;
     background: white;
