@@ -1,9 +1,9 @@
 // Tiny MCE
 
 tinymce.init({
-      selector: '#text-editor',
-      toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
-    });
+  selector: 'textarea',
+  plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed permanentpen powerpaste advtable advcode editimage tableofcontents mergetags inlinecss'
+});
 
 // Copy button text to clipboard
 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Party Wall Document Generator</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header--container-main">
+      <div class="header--container">
+        <div class="header--container-logo">
+          <img src="media/Party Wall Go Logo Dark.svg" alt="logo" class="main-logo" />
+        </div>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <a href="#"><button class="button-primary">Log In</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <div class="hero--container-main">
+    <div class="hero--container">
+      <div class="hero-row">
+        <h2>Party Wall Document Generator.</h2>
+        <p>Save time by quickly and easily generating party wall documents in minutes.</p>
+      </div>
+      <div class="hero-row">
+        <img src="media/hero image.png" alt="" id="hero-image">
+      </div>
+    </div>
+  </div>
+
+  <!-- Form -->
+
+  <div class="section">
+    <div class="container-column">
+
+      <!-- Create a div containing a dropdown with a list of merge tags that when you click on a choice it will copy it to the clipboard -->
+      <!-- The div should also contain a dropdown asking you to select a document template, which should be connected to a database of templates -->
+      
+      <h1>Please fill data in the form below:</h1>
+      <form method="POST" action="/post-feedback">
+          <label>Name:<input type="text" name="client-name" required></label>
+          <br>
+          <label>Email:<input type="text" name="client-email" required></label>
+          <br>
+          <label>Comment:<br><textarea name="comment"></textarea></label>
+          <br>
+          <input type="submit" value="Submit">
+      </form>
+      <a href="/view-feedbacks">View feedbacks</a>
+
+      <button id="copyButton">Building Owner Address</button>
+      <select>
+        <option value"{{BO_Address}}">Building Owner's Address</option>
+        <option value"{{BO_Address}}">Building Owner's Address</option>
+        <option value"{{BO_Address}}">Building Owner's Address</option>
+        <option value"{{BO_Address}}">Building Owner's Address</option>
+      </select>
+      <textarea id="text-editor"></textarea>
+    </div>
+  </div>
+
+
+  <script src="index.js" async defer></script>
+  <script src="https://cdn.tiny.cloud/1/32neukipihcvj3gopejtobmgtunow9vvil1udhj86041f1yl/tinymce/6/tinymce.min.js"
+    referrerpolicy="origin"></script>
+
+</body>
+
+</html>
